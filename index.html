@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="todo,list,app,application,todolist">
+    <meta name="description" content="Todo List Application">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="/images/post-it.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Note/css/note.css">
+    <title>Todo Application</title>
+
+</head>
+<body>
+
+    <div class="overlay">
+        <p>This size of application is not supported</p>
+    </div>
+
+    <div class="app-container">
+        <div class="app-panel" id="x">
+            
+            <div class="left-panel-header">
+                <img src="../Note/images/man.png" alt="Profile Image" class="profile-image">
+                <h3 class="profile-title">Isabelle Ray</h3>
+                <button type="button" class="menu-btn" id="leftMenuBtn">
+                    <i class="bi bi-three-dots-vertical"></i>
+                </button>
+            </div>
+
+            <div class="left-panel-body" id="y">
+               
+                <div class="left-panel-body-header">
+                    <h3 class="left-panel-body-title">Categories</h3>
+                    <button type="button" class="accordion-btn" id="categoryBtn">
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                </div>
+
+                <ul class="left-panel-body-list blue-scrollbar" id="categoryList">
+                    <li class="left-panel-body-list-item">
+                        <span class="list-item-text">Business</span>
+                        <span class="list-item-text">23</span>
+                    </li>
+                    <li class="left-panel-body-list-item">
+                        <span class="list-item-text">Design</span>
+                        <span class="list-item-text">17</span>
+                    </li>
+                    <li class="left-panel-body-list-item">
+                        <span class="list-item-text">General</span>
+                        <span class="list-item-text">42</span>
+                    </li>
+                    <li class="left-panel-body-list-item">
+                        <span class="list-item-text">Journal</span>
+                        <span class="list-item-text">16</span>
+                    </li>
+                    <li class="left-panel-body-list-item">
+                        <span class="list-item-text">Personal</span>
+                        <span class="list-item-text">22</span>
+                    </li>
+                    <li class="left-panel-body-list-item">
+                        <span class="list-item-text">Programming</span>
+                        <span class="list-item-text">35</span>
+                    </li>
+                </ul>
+
+                <div class="left-panel-body-header">
+                    <h3 class="left-panel-body-title">Tags</h3>
+                    <button type="button" class="accordion-btn" id="tagBtn">
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                </div>
+
+                <ul class="left-panel-body-tag-list blue-scrollbar" id="tagList">
+                    <li class="left-panel-body-tag-list-item">
+                        <span class="list-item-tag-text">venenatis</span>
+                    </li>
+                    <li class="left-panel-body-tag-list-item">
+                        <span class="list-item-tag-text">rutrum</span>
+                    </li>
+                    <li class="left-panel-body-tag-list-item">
+                        <span class="list-item-tag-text">loboris</span>
+                    </li>
+                    <li class="left-panel-body-tag-list-item">
+                        <span class="list-item-tag-text">natoque</span>
+                    </li>
+                    <li class="left-panel-body-tag-list-item">
+                        <span class="list-item-tag-text">penatibus</span>
+                    </li>
+                </ul>
+
+                <div class="left-panel-body-header">
+                    <h3 class="left-panel-body-title">Colors</h3>
+                    <button type="button" class="accordion-btn" id="colorBtn">
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                </div>
+
+                <ul class="left-panel-body-color-list blue-scrollbar" id="colorList">
+                    <li class="left-panel-body-color-list-item">
+                        <span class="list-item-color"></span>
+                    </li>
+                    <li class="left-panel-body-color-list-item">
+                        <span class="list-item-color"></span>
+                    </li>
+                    <li class="left-panel-body-color-list-item">
+                        <span class="list-item-color"></span>
+                    </li>
+                    <li class="left-panel-body-color-list-item">
+                        <span class="list-item-color"></span>
+                    </li>
+                    <li class="left-panel-body-color-list-item">
+                        <span class="list-item-color"></span>
+                    </li>
+                    <li class="left-panel-body-color-list-item">
+                        <span class="list-item-color"></span>
+                    </li>
+                    <li class="left-panel-body-color-list-item">
+                        <span class="list-item-color"></span>
+                    </li>
+                    <li class="left-panel-body-color-list-item">
+                        <span class="list-item-color"></span>
+                    </li>
+                    <li class="left-panel-body-color-list-item">
+                        <span class="list-item-color"></span>
+                    </li>
+                    <li class="left-panel-body-color-list-item">
+                        <span class="list-item-color"></span>
+                    </li>
+                    <li class="left-panel-body-color-list-item">
+                        <span class="list-item-color"></span>
+                    </li>
+                    <li class="left-panel-body-color-list-item">
+                        <span class="list-item-color"></span>
+                    </li>
+                    <li class="left-panel-body-color-list-item">
+                        <span class="list-item-color"></span>
+                    </li>
+ 
+                </ul>
+
+                <div class="left-panel-body-header">
+                    <h3 class="left-panel-body-title">Trash</h3>
+                    <button type="button" class="accordion-btn" id="trashBtn">
+                        <i class="bi bi-trash"></i>
+                    </button>
+                </div>
+                <ul class="left-panel-body-list blue-scrollbar" id="trashList">
+                    <li class="left-panel-body-list-item">
+                        <span class="list-item-text">Business</span>
+                        <span class="list-item-text">23</span>
+                    </li>
+                </ul>
+                <div class="left-panel-body-footer">
+                    <h3 class="left-panel-body-title">
+                        <i class="bi bi-list-columns-reverse"></i>
+                        Notes App
+                    </h3>
+                    <button type="button" class="accordion-btn">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-panel">
+            <div class="center-panel-header-section">
+                <div class="center-panel-header">
+                    <h2 class="center-panel-header-title">General</h2>
+                    <button type="button" class="panel-header-title-btn">
+                        <i class="bi bi-arrow-repeat"></i>
+                    </button>
+               </div>
+
+               <div class="center-panel-header">
+                   <p class="categories-number-text">42 Notes</p>
+                   <div class="center-panel-icon-section">
+                        <i class="bi bi-funnel"></i>
+                        <i class="bi bi-tag"></i>
+                        <i class="bi bi-three-dots-vertical"></i>
+                   </div>
+                </div>
+                <input type="search" class="search-btn" id="filtreInput"/>
+                <button type="button" class="add-note-btn">
+                    <i class="bi bi-plus-lg"></i>
+                    Add Note
+                </button>
+            </div>
+           <hr class="separator">
+           <div class="center-panel-body">
+                <ul class="note-list gray-scrollbar">
+                    <li class="note-list-item">
+                        <div class="top-header-details">
+                            <p><i class="bi bi-circle-fill"></i> General</p>
+                            <p class="note-date">01/04/2020</p>
+                        </div>
+                        <h3 class="note-title">Nama Porttier Aliquet Accussms</h3>
+                        <p class="note-description">
+                            Lorem ipsum dolor sit, amonsectetur adipisicing elit. Ex labore iste praesentium voluptatem ratione pariatur. Velit dignissimos animi enim doloribus distinctio, eum repellendus vero quis? Atque vitae voluptatum nisi veritatis?
+                        </p>
+                    </li>
+                    <li class="note-list-item">
+                        <div class="top-header-details">
+                            <p><i class="bi bi-circle-fill"></i> General</p>
+                            <p class="note-date">01/04/2020</p>
+                        </div>
+                        <h3 class="note-title">Nams Porttier Aliquet Accussms</h3>
+                        <p class="note-description">
+                            Lorem ipsum dolor sit, amet conVelit dignissimos animis ss enim doloribus distinctio, eum repellendus vero quis? Atque vitae voluptatum nisi veritatis?
+                        </p>
+                    </li>
+                    <li class="note-list-item">
+                        <div class="top-header-details">
+                            <p><i class="bi bi-circle-fill"></i> SubGeneral</p>
+                            <p class="note-date">01/04/2020</p>
+                        </div>
+                        <h3 class="note-title">Nam Porttier Aliquet Accussms</h3>
+                        <p class="note-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lxcvxcvxcvxcvxcvxvorem ipsum dolor sit, amet consectetur adipisicing elit. Ex labore iste praesentium voluptatem ratione pariatur. Velit dignissimos animi enim doloribus distinctio, eum repellendus vero quis? Atque vitae voluptatum nisi veritatis?
+                        </p>
+                    </li>
+                    <li class="note-list-item">
+                        <div class="top-header-details">
+                            <p><i class="bi bi-circle-fill"></i> General</p>
+                            <p class="note-date">01/04/2020</p>
+                        </div>
+                        <h3 class="note-title">Nam Porttier Aliquet Accussms</h3>
+                        <p class="note-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex labore iste praesentium voluptatem ratione pariatur. Velit dignissimos animi enim doloribus distinctio, eum repellendus vero quis? Atque vitae voluptatum nisi veritatis?
+                        </p>
+                    </li>
+                    <li class="note-list-item">
+                        <div class="top-header-details">
+                            <p><i class="bi bi-circle-fill"></i> General</p>
+                            <p class="note-date">01/04/2020</p>
+                        </div>
+                        <h3 class="note-title">Nam Porttier Aliquet Accussms</h3>
+                        <p class="note-description">
+                            Lorem ipsum dolor sit, amet cont, amet cons Ex labore iste enim doloribus distinctio, eum repellendus vero quis? Atque vitae voluptatum nisi veritatis?
+                        </p>
+                    </li>
+                    <li class="note-list-item">
+                        <div class="top-header-details">
+                            <p><i class="bi bi-circle-fill"></i> General</p>
+                            <p class="note-date">01/04/2024</p>
+                        </div>
+                        <h3 class="note-title">Nam Porttier Aliquet Accussms</h3>
+                        <p class="note-description">
+                             Lorem ipsum dolor sit, amet consectnimi enitae voluptatum nisi veritatis?
+                        </p>
+                    </li>
+                </ul>
+           </div>
+        </div>
+        <div class="app-panel">
+            <ul class="right-panel-header">
+                <li class="right-panel-header-item">
+                    <label for="categoriesList">
+                        <i class="bi bi-circle-fill"></i>
+                    </label>
+                    <select id="categoriesList">
+                        <option value="Business">Business</option>
+                        <option value="Design">Design</option>
+                        <option value="General">General</option>
+                        <option value="Journal">Journal</option>
+                        <option value="Personal">Personal</option>
+                        <option value="Programming">Programming</option>
+                    </select>
+                </li>
+                <li class="right-panel-header-item">
+                    <button type="button" class="text-btn" onclick="makeBold()"><i class="bi bi-type-bold"></i></button>
+                    <button type="button" class="text-btn" onclick="makeItalic()"><i class="bi bi-type-italic"></i></button>
+                    <button type="button" class="text-btn" onclick="underlineText()"><i class="bi bi-type-underline"></i></button>
+                </li>
+                <li class="right-panel-header-item">
+                    <button type="button" class="text-btn"><i class="bi bi-link-45deg"></i></button>
+                    <button type="button" class="text-btn"><i class="bi bi-list-task"></i></button>
+                </li>
+                <li class="right-panel-header-item">
+                    <button type="button" class="text-btn" id="alignLeftBtn"><i class="bi bi-text-left"></i></button>
+                    <button type="button" class="text-btn" id="alignCenterBtn"><i class="bi bi-text-center"></i></button>
+                    <button type="button" class="text-btn" id="alignRightBtn"><i class="bi bi-text-right"></i></button>
+                    <button type="button" class="text-btn"><i class="bi bi-justify"></i></button>
+                </li>
+                <li class="right-panel-header-item">
+                    <button type="button" class="text-btn" id="addContentImageBtn"><i class="bi bi-image"></i></button>
+                    <button type="button" class="text-btn" id="addContentLinkBtn"><i class="bi bi-paperclip"></i></button>
+                </li>
+                <li class="right-panel-header-item">
+                    <button type="button" class="text-btn" id="printBtn"><i class="bi bi-printer"></i></button>
+                    <button type="button" class="text-btn"><i class="bi bi-send"></i></button>
+                    <button type="button" class="text-btn"><i class="bi bi-trash"></i></button>
+                </li>
+            </ul>
+            <h1 class="note-big-title">Aenean Bindeum Turpis In Iaculis Suscips</h1>
+            <ul class="note-tag-list">
+                <li><i class="bi bi-tag"></i></li>
+                <li># venenatis</li>
+                <li># rutrum</li>
+                <li># loboris</li>
+                <li># natoque</li>
+                <li># penatibius</li>
+            </ul>
+            <hr class="separator">
+            <div name="noteTextArea" id="noteTextArea" class="note-text-area gray-scrollbar" contenteditable="true">
+
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt suscipit pariatur ea temporibus excepturi repudiandae sapiente ad qui. Exercitationem, dolore corporis? Praesentium magnam dicta debitis tenetur animi odit quibusdam numquam?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellat tempore veritatis eius quod ratione recusandae architecto, earum distinctio aliquam alias quaerat! Explicabo, fuga eaque! Adipisci ea odio architecto. Accusamus.
+                İLorem ipsum dolor sit, amet consectetur adipisicing elit. Quae officia, illo cupiditate consequuntur repudiandae odit, vitae ullam cumque distinctio, unde architecto fugiat voluptatibus rerum quis? Corporis optio voluptate ducimus velit!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium saepe exercitationem neque pariatur in magni. Qui, deleniti laboriosam voluptatem ut fugit quasi quis nisi! Eum blanditiis soluta eligendi ullam perferendis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt suscipit pariatur ea temporibus excepturi repudiandae sapiente ad qui. Exercitationem, dolore corporis? Praesentium magnam dicta debitis tenetur animi odit quibusdam numquam?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellat tempore veritatis eius quod ratione recusandae architecto, earum distinctio aliquam alias quaerat! Explicabo, fuga eaque! Adipisci ea odio architecto. Accusamus.
+                İLorem ipsum dolor sit, amet consectetur adipisicing elit. Quae officia, illo cupiditate consequuntur repudiandae odit, vitae ullam cumque distinctio, unde architecto fugiat voluptatibus rerum quis? Corporis optio voluptate ducimus velit!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium saepe exercitationem neque pariatur in magni. Qui, deleniti laboriosam voluptatem ut fugit quasi quis nisi! Eum blanditiis soluta eligendi ullam perferendis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt suscipit pariatur ea temporibus excepturi repudiandae sapiente ad qui. Exercitationem, dolore corporis? Praesentium magnam dicta debitis tenetur animi odit quibusdam numquam?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellat tempore veritatis eius quod ratione recusandae architecto, earum distinctio aliquam alias quaerat! Explicabo, fuga eaque! Adipisci ea odio architecto. Accusamus.
+                İLorem ipsum dolor sit, amet consectetur adipisicing elit. Quae officia, illo cupiditate consequuntur repudiandae odit, vitae ullam cumque distinctio, unde architecto fugiat voluptatibus rerum quis? Corporis optio voluptate ducimus velit!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium saepe exercitationem neque pariatur in magni. Qui, deleniti laboriosam voluptatem ut fugit quasi quis nisi! Eum blanditiis soluta eligendi ullam perferendis.
+
+            </div>
+        </div>
+    </div>
+
+  
+    
+    <script src="../Note/js/note.js"></script>
+</body>
+</html>

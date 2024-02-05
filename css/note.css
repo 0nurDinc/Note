@@ -1,0 +1,526 @@
+:root{
+    --appBlue:#3F7AFE;
+    --appLightGray:#F6F7FB;
+    --appSelectGray:#ECEDF0;
+    --appSelectBlue:#306DF5;
+    --appDarkSelectBlue:#2A61DC;
+
+    --fontfamily: 'Times New Roman', Times, serif;
+
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: content-box;
+   font-family: var(--fontfamily);
+}
+
+.app-container{
+   width: 90vw;
+   height: 90vh;
+   margin: 5vh auto;
+   box-shadow: 5px 5px 5px gainsboro;
+   border-radius: 15px;
+   display: flex;
+}
+
+
+.app-panel{
+   padding: 30px;
+   height: calc(90vh - 60px);
+}
+
+.app-panel:nth-child(1){
+   width: 18%;
+   background-color: var(--appBlue);
+   border-radius: 15px 0 0 15px;
+   position: relative;
+}
+
+.app-panel:nth-child(2){
+   width: 32%;
+   background-color: var(--appLightGray);
+}
+
+
+.app-panel:nth-child(3){
+   width: 50%;
+}
+
+
+
+.blue-scrollbar::-webkit-scrollbar{
+   width: 2px;
+}
+
+.blue-scrollbar::-webkit-scrollbar-thumb{
+   background-color: var(--appDarkSelectBlue);
+   border-radius: 5px;
+}
+
+.blue-scrollbar::-webkit-scrollbar-track{
+   background-color: whitesmoke;
+}
+
+
+.gray-scrollbar::-webkit-scrollbar{
+   width: 3px;
+}
+
+.gray-scrollbar::-webkit-scrollbar-thumb{
+   background-color: gainsboro;
+   border-radius: 5px;
+}
+
+.gray-scrollbar::-webkit-scrollbar-track{
+   background-color: whitesmoke;
+}
+
+
+.underline {
+   text-decoration: underline;
+}
+
+
+/* ****************** Application Left Panel Css Start ******************** */
+
+
+.left-panel-header{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   color: gainsboro;
+}
+
+.profile-image{
+   width: 45px;
+   height: 45px;
+}
+
+
+.profile-title{
+   width: 100%;
+   text-align: left;
+   text-indent: 20px;
+   font-weight: normal;
+}
+
+
+.menu-btn{
+   font-size: 18px;
+   color: gainsboro;
+   background-color: transparent;
+   padding: 5px 0;
+   border: none;
+}
+
+
+.left-panel-body{
+   margin-top: 60px;
+   color: gainsboro;
+}
+
+
+.left-panel-body-header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: white;
+}
+
+.left-panel-body-title{
+   width: 100%;
+   font-variant: small-caps;
+   letter-spacing: 2px;
+}
+
+.accordion-btn{
+   font-size: 15px;
+   height: 30px;
+   color: white;
+   font-weight: bold;
+   background-color: transparent;
+   border: none;
+}
+
+
+.left-panel-body-list{
+   list-style-type: none;
+   margin: 20px 0;
+   height: 85px;
+   overflow: auto;
+}
+
+
+.left-panel-body-list-item{
+   margin: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.list-item-text{
+   font-size: 16px;
+}
+
+.list-item-text:last-child{
+   font-size: 14px;
+   margin-right: 3px;
+}
+
+
+.left-panel-body-tag-list{
+   list-style-type: none;
+   margin: 20px 0;
+   height: 85px;
+   overflow-x: auto;
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   flex-wrap: wrap;
+}
+
+
+.left-panel-body-tag-list-item{
+   padding: 5px;
+   border: 1px dotted gainsboro;
+   margin: 3px;
+   border-radius: 5px;
+   overflow:auto;
+   transition: .3s;
+}
+
+.list-item-tag-text::before{
+   content: "# ";
+}
+
+.left-panel-body-tag-list-item:hover{
+   background-color: whitesmoke;
+   color: var(--appBlue);
+}
+
+.left-panel-body-tag-list::-webkit-scrollbar{
+   width: 2px;
+}
+
+.left-panel-body-tag-list::-webkit-scrollbar-thumb{
+   background-color: var(--appDarkSelectBlue);
+   border-radius: 5px;
+}
+
+.left-panel-body-tag-list::-webkit-scrollbar-track{
+   background-color: white;
+}
+
+.left-panel-body-list-item{
+   margin: 10px 8px 10px 0px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+.left-panel-body-color-list{
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   list-style-type: none;
+   height: 85px;
+   overflow-x: auto;
+   margin: 20px 0;
+}
+
+
+
+.left-panel-body-color-list-item{ 
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   background-color: currentColor;
+   margin: 10px;
+}
+
+
+.left-panel-body-footer{
+   display: flex;
+   justify-content: space-around;
+   width: calc(100% - 60px);
+   position: absolute;
+   bottom: 20px;
+   color: white;
+}
+
+.left-panel-body-title > i{
+   font-size: 18px;
+}
+
+
+/* ****************** Application Center Panel Css Start ******************** */
+
+
+.center-panel-header-section{
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.center-panel-header{
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   margin-bottom: 5px;
+}
+
+.center-panel-header-title{
+   color: black;
+   margin-bottom: 15px;
+}
+
+.panel-header-title-btn{
+   font-size: 18px;
+   padding: 2px;
+   background-color: transparent;
+   border: none;
+}
+
+.categories-number-text{
+   font-weight: 500;
+}
+
+.center-panel-icon-section{
+   font-size: 18px;
+}
+
+.search-btn{
+   background-color: gainsboro;
+   width: calc(100% - 40px);
+   padding: 12px 25px 12px 10px;
+   margin-bottom: 15px;
+   background-image: url(/images/loupe.png);
+   background-size: 25px;
+   background-repeat: no-repeat;
+   background-position: calc(100% - 5px);
+   color: var(--appDarkSelectBlue);
+   font-weight: bold;
+   font-size: 14px;
+   outline:none;
+   border: none;
+   border-radius: 5px;
+}
+
+.add-note-btn{
+   display: block;
+   width: calc(100% - 10px);
+   padding: 8px 5px;
+   font-size: 16px;
+   background-color: var(--appBlue);
+   color: white;
+   border: 1px solid transparent;
+   transition: .2s;
+   border-radius: 5px;
+}
+
+.add-note-btn:hover{
+   background-color: white;
+   color: var(--appBlue);
+   border: 1px dashed currentColor;
+}
+
+.add-note-btn > i{
+   margin-right: 5px;
+   font-weight: bold;
+}
+
+
+.separator{
+   border: none;
+   border-bottom: 1px solid gainsboro;
+}
+
+
+.center-panel-body{
+   margin-top: 20px;
+}
+
+.note-list{
+   list-style-type: none;
+   height: calc(100vh - 350px);
+   overflow: auto;
+}
+
+
+.note-list-item{
+   margin: 0 5px 20px 0;
+   padding: 20px 20px 20px 0
+}
+
+.note-list-item:hover{
+   background-color: var(--appSelectGray);
+}
+
+.top-header-details{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 15px;
+   color: gray;
+}
+
+.note-title{
+   margin-bottom: 8px;
+   white-space:nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.note-description{
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 4;
+   -webkit-box-orient: vertical;
+}
+
+.note-date{
+   margin-right: 5px;
+}
+
+
+
+/* ****************** Application Right Panel Css Start ******************** */
+
+.right-panel-header{
+   list-style-type: none;
+   display: grid;
+   grid-template-columns: repeat(6,auto);
+   margin-bottom: 25px;
+}
+
+.right-panel-header-item{
+   display: flex;
+   justify-content: space-around;
+   margin-right: 5px;
+   border-right: 1px solid gainsboro;
+}
+
+.right-panel-header-item:last-child
+{
+   border-right: none;
+}
+
+.right-panel-header-item > label{
+   font-size: 20px;
+   margin-right: 3px;
+}
+
+.right-panel-header-item > select{
+   width: 80%;
+   font-size: 15px;
+   padding: 2px 0;
+   background-color: var(--appLightGray);
+   border: none;
+   outline: none;
+   color: gray;
+   font-weight: bold;
+}
+
+.text-btn{
+   font-size: 18px;
+   padding: 0 5px;
+   background-color: transparent;
+   border: none;
+}
+
+.note-big-title{
+   margin-bottom: 10px;
+}
+
+.note-tag-list{
+   list-style-type: none;
+   color: gray;
+   display: flex;
+   margin-bottom: 30px;
+}
+
+.note-tag-list > li {
+   margin-right: 20px;
+   font-size: 16px;
+}
+
+.note-text-area{
+   margin-top: 30px;
+   display: block;
+   width: 100%;
+   height: calc(100vh - 335px);
+   border: none;
+   outline: none;
+   font-family: var(--fontfamily);
+   color: #555555;
+   line-height: 20px;
+   resize: none;
+   overflow: auto;
+
+}
+
+.note-text-area::selection{
+   background-color: goldenrod;
+   color: black;
+}
+
+ 
+/**************** Overlay Css Start ************************ */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+    z-index: 1;
+}
+
+.overlay p {
+    font-size: 24px;
+    color: red;
+}
+
+.overlay p::before{
+   content: "!";
+   font-size: 25px;
+   margin-right: 5px;
+}
+
+
+/* ************** Media Screen Css Srtart ****************** */
+
+@media screen and (max-width: 1500px) {
+   
+   .app-container{
+      width: 96vw;     
+   }
+   .app-panel:nth-child(1){
+      width: 20%;
+   
+   }
+   .app-panel:nth-child(2){
+      width: 30%;
+      background-color: var(--appLightGray);
+   }
+   .app-panel:nth-child(3){
+      width: 45%;
+   }
+}
+
+
+@media screen and (max-width: 1230px) {
+   .overlay {
+       display: flex;
+   }
+}
+
+
